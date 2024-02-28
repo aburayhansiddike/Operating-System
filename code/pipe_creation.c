@@ -28,8 +28,9 @@ int main() {
 		}
 	}
 
+	printf("Enter something: \n");
 	int msgLen = read(STDIN_FILENO, writeMsg, sizeof(writeMsg));
-	
+
 	int fd = open(pipePath, O_RDWR);
 	write(fd, writeMsg, strlen(writeMsg));
 
