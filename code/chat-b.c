@@ -31,17 +31,17 @@ int main() {
 
 	// while(1) {
 		int n = read(fd, msg, strlen(msg));
-		// if (n > 1) {
-		// 	printf("Jannat: ");
-		// 	write(STDOUT_FILENO, msg, strlen(msg));
-		// } else {
+		if (n) {
+			printf("Jannat: ");
+			write(STDOUT_FILENO, msg, strlen(msg));
+		} else {
 		// 	printf("Write to Jannat: ");
 		// 	read(STDIN_FILENO, msg, strlen(msg));
 		// 	write(fd, msg, strlen(msg));
 		// }
 		// if (strcmp(msg, "bye") == 0) {
 		// 	break;
-		// }
+		}
 	// }
 
 	exit(0);

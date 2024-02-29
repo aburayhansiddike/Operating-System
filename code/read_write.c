@@ -18,6 +18,8 @@ int main(){
     buffer[n] = '\0';
     write(out_fd, buffer, strlen(buffer));
 
+    
+
     exit(0);
 
 }

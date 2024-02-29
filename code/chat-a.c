@@ -30,7 +30,7 @@ int main() {
 	int fd = open(pipePath, O_RDWR);
 
 	// while(1) {
-		int n = read(fd, msg, strlen(msg));
+		// int n = read(fd, msg, strlen(msg));
 		// printf("%d\n", n);
 		// if (n > 1) {
 		// 	printf("Jannat: ");
@@ -38,7 +38,7 @@ int main() {
 		// } else {
 			// printf("Write to Jannat: ");
 			read(STDIN_FILENO, msg, strlen(msg));
-			// write(fd, msg, strlen(msg));
+			write(fd, msg, strlen(msg));
 		// }
 		// if (strcmp(msg, "bye") == 0) {
 		// 	break;
