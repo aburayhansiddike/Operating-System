@@ -48,8 +48,7 @@ int main() {
     }
 
     for (int i = -4; i < cores; i++) {
-        int status;
-        pid_t wpid = waitpid(-1, &status, 0);
+        pid_t wpid = waitpid(-1, NULL, 0);
         if (wpid == -1) {
             perror("waitpid");
             exit(EXIT_FAILURE);
